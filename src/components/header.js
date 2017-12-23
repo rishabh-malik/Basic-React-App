@@ -11,7 +11,7 @@ class Header extends Component{
     render(){
         return(
             <header>
-                <div>Logo</div>
+                <div classname="logo">Logo</div>
                 <input/>
             </header>
         )

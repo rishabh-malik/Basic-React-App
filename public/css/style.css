@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    font-family: cursive
+}
+
+header{
+    background: lightblue;
+    text-align: center
+}
+
+.logo{
+    color: white;
+    font-size: 40px;
+}
