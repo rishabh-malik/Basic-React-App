@@ -1,8 +1,22 @@
-import React from 'react';
+import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 
-const Header=()=>{
-    return <h1>Header</h1>
+// const Header=()=>{
+//     return <div>Header</div>
+// }
+
+//class based component
+class Header extends Component{
+    //react provides this component
+    render(){
+        return(
+            <header>
+                <div>Logo</div>
+                <input/>
+            </header>
+        )
+
+    }
 }
 
 // exporting component
