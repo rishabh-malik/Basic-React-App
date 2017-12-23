@@ -14,12 +14,15 @@ class Header extends Component{
         //creating a state in react
         //state is like a database
         this.state={
-            keywords:'jon'
+            keywords:''
         }
     }
 
     inputChange(event){
-        console.log(event.target.value)
+        //changing state
+        this.setState({keywords:event.target.value})
+
+        //console.log(event.target.value)
     }
 
     //react provides this component
@@ -27,7 +30,7 @@ class Header extends Component{
         return(
             <header>
                 <div classname="logo">Logo</div>
-                <input onChange={this.inputChange}/>
+                <input onChange={this.inputChange.bind(this)}/>
             </header>
         )
 
