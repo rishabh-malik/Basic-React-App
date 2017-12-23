@@ -12,3 +12,8 @@ header{
     color: white;
     font-size: 40px;
 }
+
+header input{
+    font-size: 20px;
+    margin: 20px 0px;
+}
