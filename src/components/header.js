@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import ReactDOM from 'react-dom';
 
 // const Header=()=>{
 //     return <div>Header</div>
@@ -14,7 +13,6 @@ class Header extends Component{
         //creating a state in react
         //state is like a database
         this.state={
-            title:'The keywords are:',
             keywords:''
         }
     }
@@ -30,10 +28,8 @@ class Header extends Component{
     render(){
         return(
             <header>
-                <div classname="logo">Logo</div>
+                <div className="logo">Logo</div>
                 <input onChange={this.inputChange.bind(this)}/>
-                <div>{this.state.title}</div>
-                <div>{this.state.keywords}</div>
             </header>
         )
 
