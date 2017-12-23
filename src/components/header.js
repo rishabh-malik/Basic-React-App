@@ -7,12 +7,17 @@ import ReactDOM from 'react-dom';
 
 //class based component
 class Header extends Component{
+
+    inputChange(event){
+        console.log(event.target.value)
+    }
+
     //react provides this component
     render(){
         return(
             <header>
                 <div classname="logo">Logo</div>
-                <input/>
+                <input onChange={this.inputChange}/>
             </header>
         )
 
