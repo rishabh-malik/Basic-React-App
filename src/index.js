@@ -13,16 +13,25 @@ class App extends Component{
         super(props);
 
         this.state={
-            news:JSON
+            news:JSON,
+            filtered:JSON
         }
+    }
+
+    //getting data from child component
+    filterNews(keywords){
+        
+
     }
 
     //passing data to newslist through props
     render(){
         return(
             <div>
-                <Header/>
-                <NewsList news={this.state.news}/>
+                <Header newsSearch={keywords=>{
+                    this.filterNews(keywords)
+                }}/>
+                <NewsList news={this.state.filtered}/>
             </div>
         )
     }
