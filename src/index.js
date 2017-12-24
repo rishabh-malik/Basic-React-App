@@ -21,7 +21,11 @@ class App extends Component{
     //getting data from child component
     filterNews(keywords){
         
-
+        let filtered=this.state.news.filter((item=>{
+            //return the item whose title contains the keyword
+            return item.title.indexOf(keywords)> -1;
+        }))
+        this.setState({filtered:filtered});
     }
 
     //passing data to newslist through props

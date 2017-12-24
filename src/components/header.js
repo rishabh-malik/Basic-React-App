@@ -20,7 +20,7 @@ class Header extends Component{
     inputChange(event){
         //changing state
         this.setState({keywords:event.target.value})
-
+        this.props.newsSearch(event.target.value);
         //console.log(event.target.value)
     }
 
@@ -29,7 +29,7 @@ class Header extends Component{
         return(
             <header>
                 <div className="logo">Logo</div>
-                <input onChange={this.inputChange.bind(this)}/>
+                <p>Search News:</p><input onChange={this.inputChange.bind(this)}/>
             </header>
         )
 
